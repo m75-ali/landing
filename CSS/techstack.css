@@ -151,12 +151,24 @@ header {
   border-radius: 8px;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
+  padding: 1.5rem 2rem;
   background-color: #ffffff;
-  border-top: 1px solid #e0e0e0;
-  padding: 1rem 2rem;
   text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #1e88e5;
 }
 
 footer p {
