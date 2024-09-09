@@ -1,0 +1,165 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo h1 {
+  font-size: 1.8rem;
+  color: #1e88e5;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a.active {
+  background-color: #1e88e5;
+  color: #ffffff;
+}
+
+.nav-menu a:hover {
+  background-color: #1e88e5;
+  color: #ffffff;
+}
+
+/* Main content styling */
+.techstack-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.techstack-content {
+  flex: 2;
+}
+
+.techstack-summary {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.techstack-summary h2 {
+  font-size: 2rem;
+  color: #1e88e5;
+  margin-bottom: 1rem;
+}
+
+.techstack-summary p {
+  font-size: 1rem;
+  color: #607d8b;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tech Stack sections styling */
+.techstack-skills,
+.techstack-frameworks,
+.techstack-tools,
+.techstack-projects {
+  margin-bottom: 2rem;
+}
+
+.techstack-skills h3,
+.techstack-frameworks h3,
+.techstack-tools h3,
+.techstack-projects h3 {
+  font-size: 1.5rem;
+  color: #1e88e5;
+  margin-bottom: 1rem;
+}
+
+.techstack-skills ul,
+.techstack-frameworks ul,
+.techstack-tools ul {
+  list-style: none;
+  padding: 0;
+}
+
+.techstack-skills li,
+.techstack-frameworks li,
+.techstack-tools li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.techstack-project-item {
+  margin-bottom: 1.5rem;
+}
+
+.techstack-project-item h4 {
+  font-size: 1.2rem;
+  color: #1e88e5;
+  margin-bottom: 0.5rem;
+}
+
+.techstack-project-item p {
+  font-size: 1rem;
+  color: #607d8b;
+}
+
+/* Image styling */
+.techstack-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techstack-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #78909c;
+}

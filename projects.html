@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mohamed Ali</title>
+  <link rel="stylesheet" href="CSS/projects.css">
 </head>
 <body>
-    
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>My Digital Space</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="techstack.html">Tech Stack</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <!-- Project Cards Here -->
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="Images/twincity.png" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>Twin Cities Weather and Tourism web application</h3>
+          <p>A functioning application which displays a map of points of interest for tourists and a live weather forecast. Also contains more information about the relevant city.</p>
+          <a href="http://mohamedali5981.000.pe/index.php?city=1" target="_blank" rel="noopener noreferrer" class="project-link">
+            View Live <img src="Images/arrow.png" alt="New Tab Icon" class="new-tab-icon">
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="Images/javafx.png" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>UWE Accommodation System</h3>
+          <p>Desktop application capable of creating and storing information relevant to tenants, halls and availability for a Hall manager to oversee.</p>
+        </div>
+      </div> 
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="Images/chatbot.png" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>UWE Chatbot</h3>
+          <p>Improved students access to self help material by using Python's SpaCy library, NLTK and GPT 3.5 to create a chatbot which is capable of answering queries and providing links to necessary information.</p>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <img src="Images/ev.png" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>EV Charging Point Locator</h3>
+          <p>Using Bristol Open Data, we created a web application which allows users to insert the postcode they are at to find the closest electric vehicle charging location via a map.</p>
+        </div>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="project-card">
+        <img src="Images/calc.png" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>Calculator</h3>
+          <p>As a way to practice my front-end development I made a calculator which is logically sound and makes no errors</p>
+          <a href="https://m75-ali.github.io/calculator/" target="_blank" rel="noopener noreferrer" class="project-link">
+            View Live <img src="Images/arrow.png" alt="New Tab Icon" class="new-tab-icon">
+          </a> 
+        </div>
+      </div>
+
+      <!-- Project Card 6 -->
+      <div class="project-card">
+        <div class="project-images">
+          <img src="Images/quiz questions.png" alt="Project Screenshot 1">
+        </div>
+        <div class="project-info">
+          <h3>Music Quiz</h3>
+          <p>This web application allows users to discover their preferred music genre by answering a series of questions about their daily activities, preferences, and experiences. Users can select multiple answers for each question, which provides a more nuanced understanding of their musical tastes.</p>
+          <a href="https://moalidev.pythonanywhere.com/" class="project-link" target="_blank" rel="noopener">
+            View Live <img src="Images/arrow.png" alt="New Tab Icon" class="new-tab-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mohamed Ali. All rights reserved.</p>
+  </footer>
 </body>
 </html>
