@@ -17,9 +17,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; /* Match the padding from index.css */
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .navbar .logo h1 {
@@ -28,22 +29,20 @@ body {
 }
 
 .nav-menu {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  list-style: none;
+  gap: 2rem;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #333;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.nav-menu a.active, .nav-menu a:hover {
-  background-color: #1e88e5;
-  color: #fff;
-  border-radius: 5px;
+.nav-menu a:hover {
+  color: #1e88e5;
 }
 
 /* Main About Section */
@@ -150,4 +149,40 @@ footer {
 footer p {
   font-size: 0.9rem;
   color: #78909c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-main {
+    padding: 2rem 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .about-intro {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .about-text {
+    max-width: 100%; /* Allow full width on small screens */
+  }
+
+  .about-text h2 {
+    font-size: 2rem; /* Reduce font size for headers */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Reduce font size for paragraphs */
+  }
+
+  .about-photo img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Keep the nav menu horizontal but allow wrapping */
+  .nav-menu {
+    flex-direction: row; /* Make sure the menu is horizontal */
+    gap: 1.5rem; /* Reduce gap on smaller screens */
+    flex-wrap: wrap; /* Allow menu items to wrap */
+  }
 }

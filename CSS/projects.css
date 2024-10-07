@@ -1,4 +1,4 @@
-/* Reset default styling */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,32 +6,21 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* Body styling */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
+/* Body Styling */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   background-color: #f0f4f8;
   color: #333;
 }
 
-/* Header styling */
-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; /* Match the padding from about.css */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .navbar .logo h1 {
@@ -40,38 +29,30 @@ header {
 }
 
 .nav-menu {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
-}
-
-.nav-menu li {
-  margin: 0;
+  list-style: none;
+  gap: 2rem; /* Consistent gap */
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-menu a.active {
-  background-color: #1e88e5;
-  color: #ffffff;
+  transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-  background-color: #1e88e5;
-  color: #ffffff;
+  color: #1e88e5;
 }
 
-/* Projects section styling */
+/* Projects Section Styling */
 .projects-section {
   padding: 2rem;
-  flex: 1; /* This makes sure the section takes up available space */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .projects-section h2 {
@@ -81,7 +62,7 @@ header {
   color: #1e88e5;
 }
 
-/* Projects container: Using CSS Grid with two columns */
+/* Projects Container: Using CSS Grid with two columns */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns layout */
@@ -93,9 +74,21 @@ header {
   .projects-container {
     grid-template-columns: 1fr; /* Stack the columns on smaller screens */
   }
+
+  /* Keep the nav menu horizontal but allow wrapping */
+  .nav-menu {
+    flex-direction: row; /* Make sure the menu is horizontal */
+    gap: 1.5rem; /* Reduce gap on smaller screens */
+    flex-wrap: wrap; /* Allow menu items to wrap */
+  }
+
+  /* Adjust the projects section padding on smaller screens */
+  .projects-section {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
 }
 
-/* Project card styling */
+/* Project Card Styling */
 .project-card {
   background: #ffffff;
   border: 1px solid #e0e0e0;
@@ -111,13 +104,13 @@ header {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Project card image styling */
+/* Project Card Image Styling */
 .project-card img {
   width: 100%;
   height: auto;
 }
 
-/* Project card info styling */
+/* Project Card Info Styling */
 .project-info {
   padding: 1rem;
   text-align: center;
@@ -135,7 +128,7 @@ header {
   margin-bottom: 1rem;
 }
 
-/* Project link styling */
+/* Project Link Styling */
 .project-link {
   text-decoration: none;
   color: #1e88e5;

@@ -16,13 +16,14 @@ header {
   background-color: #ffffff;
   border-bottom: 2px solid #e0e0e0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; /* Adjusted for better spacing on mobile */
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .navbar .logo h1 {
@@ -50,21 +51,23 @@ header {
 /* Hero Section */
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column; /* Stack content on mobile */
+  align-items: center; /* Center all items */
   background: linear-gradient(135deg, #e3f2fd 30%, #bbdefb 100%);
-  padding: 4rem;
-  height: 80vh;
+  padding: 2rem; /* Adjusted padding */
+  height: auto; /* Allow height to adjust based on content */
 }
 
 .hero-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Stack content on smaller screens */
+  align-items: center; /* Center content */
   gap: 2rem;
 }
 
 .hero-text {
-  max-width: 40%;
+  max-width: 90%; /* Allow more width on smaller screens */
+  text-align: center; /* Center text */
 }
 
 .hero-text h2 {
@@ -95,6 +98,7 @@ header {
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Full width button */
 }
 
 .btn-primary:hover {
@@ -106,7 +110,7 @@ header {
 footer {
   background-color: #ffffff;
   border-top: 1px solid #e0e0e0;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; /* Adjusted for better spacing on mobile */
   text-align: center;
 }
 
@@ -130,4 +134,23 @@ footer {
 footer p {
   font-size: 0.9rem;
   color: #78909c;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row; /* Change back to row on larger screens */
+    justify-content: space-around; /* Space between items */
+    height: 80vh; /* Maintain height for larger screens */
+    padding: 4rem; /* Increase padding for larger screens */
+  }
+
+  .hero-content {
+    flex-direction: row; /* Change back to row on larger screens */
+  }
+
+  .hero-text {
+    max-width: 40%; /* Limit width for larger screens */
+    text-align: left; /* Align text left for larger screens */
+  }
 }
