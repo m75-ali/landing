@@ -1,5 +1,6 @@
 // NavBar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const NavBar = () => {
@@ -28,25 +29,25 @@ const NavBar = () => {
           variants={navVariants}
           transition={{ duration: 0.4, delay: 0.1 }}
         >
-          <a href="/" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">Home</a>
+          <Link to="/" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">Home</Link>
         </motion.li>
         <motion.li 
           variants={navVariants}
           transition={{ duration: 0.4, delay: 0.2 }}
         >
-          <a href="/about" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">About</a>
+          <Link to="/about" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">About</Link>
         </motion.li>
         <motion.li 
           variants={navVariants}
           transition={{ duration: 0.4, delay: 0.3 }}
         >
-          <a href="/projects" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">Projects</a>
+          <Link to="/projects" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">Projects</Link>
         </motion.li>
         <motion.li 
           variants={navVariants}
           transition={{ duration: 0.4, delay: 0.4 }}
         >
-          <a href="/techstack" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">Tech Stack</a>
+          <Link to="/techstack" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">Tech Stack</Link>
         </motion.li>
       </ul>
     </motion.nav>
