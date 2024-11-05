@@ -1,6 +1,6 @@
-// TechStack.js
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import BackgroundAnimation from './BackgroundAnimation';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -12,6 +12,12 @@ const TechStack = () => {
       <div className="absolute inset-0 -z-10 w-full h-full">
         <BackgroundAnimation />
       </div>
+
+      {/* Helmet for meta information */}
+      <Helmet>
+        <title>My Technology Stack | Mohamed Ali</title>
+        <meta name="description" content="Explore the technologies Mohamed Ali uses to build scalable and efficient applications." />
+      </Helmet>
 
       {/* Navbar */}
       <NavBar />

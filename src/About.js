@@ -1,5 +1,5 @@
-// About.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -8,6 +8,10 @@ import BackgroundAnimation from './BackgroundAnimation';
 const About = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
+      <Helmet>
+        <title>About Me | Mohamed Ali</title>
+      </Helmet>
+
       {/* Background Animation */}
       <BackgroundAnimation />
 

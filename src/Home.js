@@ -1,6 +1,6 @@
-// src/pages/Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import BackgroundAnimation from './BackgroundAnimation';
@@ -8,6 +8,10 @@ import BackgroundAnimation from './BackgroundAnimation';
 const Home = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
+      <Helmet>
+        <title>Home | Mohamed Ali</title>
+      </Helmet>
+
       {/* Background Animation */}
       <BackgroundAnimation />
 
