@@ -37,9 +37,6 @@ const Projects = () => {
             <div className="p-4">
               <h3 className="text-lg font-bold text-indigo-800">Twin Cities Weather and Tourism web application</h3>
               <p className="text-gray-600 mt-2">An application displaying a map of tourist spots and live weather forecast with city information.</p>
-              <a href="http://mohamedali5981.000.pe/index.php?city=1" target="_blank" rel="noopener noreferrer" className="text-indigo-600 mt-3 inline-block hover:underline">
-                View Live <img src="/Images/arrow.png" alt="New Tab Icon" className="inline-block h-4 w-4 ml-1"/>
-              </a>
             </div>
           </motion.div>
 
@@ -103,9 +100,6 @@ const Projects = () => {
             <div className="p-4">
               <h3 className="text-lg font-bold text-indigo-800">Music Quiz</h3>
               <p className="text-gray-600 mt-2">Interactive web app to help users discover their preferred music genre through quiz questions.</p>
-              <a href="https://moalidev.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 mt-3 inline-block hover:underline">
-                View Live <img src="/Images/arrow.png" alt="New Tab Icon" className="inline-block h-4 w-4 ml-1"/>
-              </a>
             </div>
           </motion.div>
         </motion.div>
